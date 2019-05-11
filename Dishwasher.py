@@ -1,7 +1,7 @@
 class Dishwasher:
     amount = 0
 
-    def __init__(self, costs_water_for_year=40000, number_of_programmes=12, brand="Bosch", quantity_of_dishes=50, producing_country="Germany", price=300, model="ZX"):
+    def __init__(self, costs_water_for_year=50000, number_of_programmes=12, brand="Bosch", quantity_of_dishes=50, producing_country="Germany", price=300, model="ZX"):
         self.costs_water_for_year = costs_water_for_year
         self.number_of_programmes = number_of_programmes
         self.brand = brand
@@ -11,7 +11,7 @@ class Dishwasher:
         self.model = model
 
     def __del__(self):
-        return str(self.costs_water_for_year + "a lot of water")
+        return print(self.costs_water_for_year + 40000)
 
     def __str__(self):
         return str(self.__dict__)
